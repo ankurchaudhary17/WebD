@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="icons/icon.css">
+</head>
+<style>
+    body {
+        margin: 0 100px;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: blanchedalmond;
+    }
+
+    /*::after,::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}*/
+    .nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0px;
+    }
+
+    .nav.logo h1 {
+        font-weight: 600;
+        font-family: sans-serif;
+        color: #0000;
+    }
+
+    .nav .logo b {
+        color: blue;
+    }
+
+    .nav li {
+        display: inline-block;
+
+    }
+
+    .nav li a {
+        display: inline-block;
+        margin-right: 30px;
+        /* padding: 10px 20px; this is also for giving the space b/w the li items*/
+        text-decoration: none;
+        color: blue;
+    }
+
+    .nav li :hover {
+        color: brown;
+    }
+
+    .nav ul .active::after {
+        content: '';
+        width: 50%;
+        height: 2px;
+        background-color: #ff511c;
+        display: flex;
+
+        position: relative;
+        margin-left: 5px;
+    }
+
+    input {
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    .signin {
+        background: transparent;
+        border: none;
+    }
+
+    .signup {
+        background-color: #ff511c;
+        color: #ffff;
+        border: none;
+        border-radius: 6px;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 50% auto;
+        gap: 30px;
+        margin-top: 100px;
+        text-align: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .content .content-left {
+        display: block;
+        width: 100%;
+
+    }
+
+    .content .content-left.info {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content .content-left.info h1 {
+        margin-bottom: 30px;
+        font-size: 50px;
+
+    }
+
+    .content .content-left.info p {
+        line-height: 2pc;
+        margin-bottom: 30px;
+    }
+
+    .content .content-left button {
+        padding: 10px 23px;
+        background-color: #ff511c;
+        color: #ffff;
+        border-radius: 6px;
+        cursor: pointer;
+        border: none;
+
+    }
+
+    .content .content-right {
+        display: block;
+        width: 100%;
+
+    }
+
+    .content .content-right img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        animation: rotate 10s linear infinite;
+        user-select: none;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+
+    }
+
+    .category {
+        width: 100%;
+        display: flex;
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+
+    .category .list-item {
+        width: 90%;
+        position: relative;
+        margin-top:50px;
+    }
+
+    .category .list-item h3 {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: sans-serif;
+        margin-bottom: 70px;
+
+    }
+
+    .category .list-item .card-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .category .card-list .card {
+        width: 200px;
+        height: auto;
+        display: block;
+        padding: 10px;
+        border-radius: 10px;
+        position: relative;
+        background: #ffff;
+        outline: 2px solid #faad96;
+    }
+    .category.card-list .card .food-title{
+        padding: 40px 0 10px;
+        
+    }
+    .category .card-list .card .food-title h1{
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: sans-serif;
+    }
+    .category .card .desc-food p{
+        font-size: 13px;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 20px;
+        font-family: sans-serif;
+    }
+    .category .card .price{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .category .card .price span{
+        font-weight: 600;
+        font-family: sans-serif;
+        cursor: pointer;
+    }
+    .category .card .price span .plus-icon{
+        color: #ff511c;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .nav ul{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+</style>
+
+<body>
+    <section class="menu">
+        <div class="nav">
+            <div class="logo">
+                <h1>FOOd<b>io</b></h1>
+            </div>
+
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Gallary</a></li>
+            </ul>
+
+
+            <div>
+                <input class="signin" type="submit" value="Sign In" name="Signin">
+                <input class="signup" type="submit" value="Sign Up" name="Signup">
+            </div>
+        </div>
+    </section>
+    <section class="grid">
+        <div class="content">
+            <div class="content-left">
+                <div class="info">
+                    <h1>Order the Best food<br>Anytime with Smile</h1>
+                    <p>Part of the secret of success is to eat what you like and <br>
+                        let the food food fight it out inside</p>
+                </div>
+                <button>More Food</button>
+
+            </div>
+            <img src="pexels-sydney-troxell-718742.jpg"
+                alt="">
+        </div>
+    </section>
+    <section class="category">
+        <div class="list-item">
+            <h3>Popular Dishes</h3>
+            <div class="card-list">
+                <div class="card">
+                    <img style="width:100%" src="pexels-valeria-boltneva-1639557.jpg" alt="">
+                    
+                    <div class="food-title">
+                        <h1>Beef Burger</h1>
+                    </div>
+                    <div class="decs-food">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, inventore?</p>
+                    </div>
+                    <div class="price">
+                       /* icon=+*/ 
+                        <span>$10.99</span><span><i class='bx bxs-plus-circle plus-icon'></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

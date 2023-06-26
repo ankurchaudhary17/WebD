@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Effect in CSS</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h3{
+            color: chartreuse;
+        }
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition-property: background-color;
+           /* transition-duration: 4s;
+          /*  transition-timing-function: ease-in-out;*/
+          /*  transition-delay: 2s;
+            /*short cut in on line*/
+           /* transition:background-color  1s ease-in-out .3s;*/
+
+            transition:all  1s ease-in-out .3s;/*by using all we transition all the property */
+        }
+        #box:hover{
+            background-color: aquamarine;
+            height: 400px;
+            width: 400px;
+            border-radius: 100px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h3>This is css tutotial</h3>
+    <div class="container">
+        <div id="box">
+            this is box
+        </div>
+    </div>
+</body>
+</html>

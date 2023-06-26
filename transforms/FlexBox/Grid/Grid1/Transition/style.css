@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    background-color: green;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    margin: 30px;
+    border: 2px solid orange;
+    background-color: aqua;
+    /* transition: 2s; */
+    /* transition-property: background-color; */
+    /* transition-delay: 4s; */
+    /* transition: background-color 0.3s ease; */
+    /* transition: all 200ms ease; */
+    /* transition: transform 3s ease-in; */
+    /* transition: transform 3s ease-out; */
+    /* Shorthand property  */
+    /* transition: transform 3s cubic-bezier(1,-0.09,0,1.68) 1s; */
+
+    /* you can also write like this  */
+    transition-property:transform ;
+    transition-duration: 3s;
+    transition-timing-function:cubic-bezier(1,-0.09,0,1.68) ;
+    ;
+    transition-delay: 1s;
+
+
+}
+.box:hover{
+    background-color: blueviolet;
+    /* transform: rotate(45deg); */
+    /* transform: translate(400px); */
+transform: scale(2) translateX(300px) rotate(360deg);
+}

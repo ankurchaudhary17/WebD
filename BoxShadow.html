@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+        display:flex;/*sb lo ek line me kr deta hai*/
+        }
+        .card{
+            padding: 23px 12px;
+            border: 2px solid red;
+            margin: 23px 12px;
+            background-color: blanchedalmond;
+          /*  box-shadow: 10px 13px green;*/
+         /*   box-shadow:-10px -13px green;*/
+           box-shadow:7px 5px 10px green;/*for blur */
+           /* box-shadow:-7px -5px 10px 8px green;for spread radius */
+          /* box-shadow: inset 3px 5px green;
+           box-shadow: inset 3px 5px green 5px 8px red;*/
+        }
+        .card h2{
+           /* text-shadow: 3px 3px white;*/
+            text-shadow: 3px 3px 2px red;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id ="card1"><h2>This is c++ cource</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus recusandae ipsa a, atque saepe placeat omnis ratione quia, dignissimos fugit quam quos reiciendis ex voluptatem quo voluptas expedita asperiores, consequuntur molestiae officia ipsum dolore!</p></div>
+        <div class="card" id ="card2"><h2>This is html cource</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolorum labore voluptates nostrum, qui cumque a id maxime numquam enim repellat tenetur ea perspiciatis deserunt, saepe quisquam fugit ipsa asperiores optio nemo distinctio modi?</p></div>
+        <div class="card" id ="card3"><h2>I have started c++ cource it does not mean we will stop thid cource</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto mollitia ratione nemo nulla! Assumenda, est omnis magnam exercitationem praesentium delectus aspernatur explicabo! Sed veritatis omnis corporis velit quas et nam quae sequi voluptates recusandae.</p></div>
+    </div>
+</body>
+</html>

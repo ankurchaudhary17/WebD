@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club</title>
+   <!-- <link href="" rel="stylesheet" href="css/style.css">-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&family=Open+Sans:ital@1&family=PT+Serif:wght@700&family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+
+
+</head>
+<style>
+    /*CSS Reset*/
+    body {
+        font-family: 'Edu NSW ACT Foundation', cursive;
+        margin: 0px;
+        padding: 0px;
+        /*  background:url('https://source.unsplash.com/1000x800/? fitness,gym')no-repeat center center/cover;*/
+        /*  background: url("girlb.jpg");*/
+        background: url("girlb.jpg")no-repeat center center/cover;
+
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red;*/
+        color: grey;
+        position: absolute;
+        left: 20px;
+        top: 0px;
+    }
+
+    .left img {
+        width: 100px;
+        /*for changing the image color*/
+        /* filter: invert(100%);*/
+
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 15px;
+        font-size: 20px;
+
+    }
+
+    .mid {
+        display: block;
+        width: 40%;
+        margin: 0px auto;
+        top: 25px;
+        /* border: 2px solid grey;*/
+
+
+    }
+
+    .right {
+
+        position: absolute;
+        right: 35px;
+        top: 20px;
+
+        display: inline-block;
+        /* border: 2px solid green;*/
+
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 15px;
+
+
+    }
+
+    .navbar li a {
+        /* color: white;*/
+        color: grey;
+        text-decoration: none;
+        padding: 30px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: red;
+    }
+
+    .btn {
+        font-family: 'Edu NSW ACT Foundation', cursive;
+        margin: 0px 9px;
+        color: grey;
+        background-color: black;
+        padding: 4px 13px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: blanchedalmond;
+    }
+
+    .container {
+        /* border: 2px solid green;*/
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+
+    }
+
+    .form-group input {
+        font-family: 'Edu NSW ACT Foundation', cursive;
+        text-align: center;
+        display: block;
+        width: 400px;
+        padding: 2px;
+        margin: 10px auto;
+        border: 2px solid bisque;
+        font-size: 25px;
+        border-radius: 20px;
+    }
+
+    .container h1 {
+        text-align: center;
+        color: aliceblue;
+
+    }
+
+    .container button {
+        display: block;
+        width: 23%;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!--Left box for logo-->
+        <div class="left">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/011/299/789/small/gym-and-fitness-logo-png.png"
+                alt="">
+            <div>Ankur fitness</div>
+        </div>
+        <!--Mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#"> About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#"> Contact Us</a></li>
+            </ul>
+        </div>
+        <!--Right box for buttoms-->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+
+        <h1>Join the best Gym Delhi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter you Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter you Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter you Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter you Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter you Phone No.">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter you Email Add..">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
